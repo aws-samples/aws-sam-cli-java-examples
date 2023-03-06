@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  maven-image
+
+  Sample SAM Template for maven-image
+
+Resources:
+  HelloWorldFunctionSkipBuild:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction/target/HelloWorld-1.0.jar
+      Handler: helloworld.App::handleRequest
+      Runtime: java11
+    Metadata:
+      SkipBuild: True
+
+Outputs:
+  HelloWorldFunction:
+    Description: "Hello World Lambda Function ARN"
+    Value: !GetAtt HelloWorldFunctionSkipBuild.Arn

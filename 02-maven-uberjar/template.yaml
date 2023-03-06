@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Example of deploying via SAM an Uber jar with maven. 
+
+
+Resources:
+  HelloWorldFunctionUberJar:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: HelloWorldFunction/
+      Handler: helloworld.App::handleRequest
+      Runtime: java11
+    Metadata:
+      BuildMethod: makefile
+
+Outputs:
+  HelloWorldFunction:
+    Description: "Hello World Lambda Function ARN"
+    Value: !GetAtt HelloWorldFunctionUberJar.Arn
