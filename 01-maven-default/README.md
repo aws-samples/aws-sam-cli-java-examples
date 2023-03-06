@@ -2,7 +2,7 @@
 
 ## Description
 
-Standard Maven pom build and package for Java
+Standard build via [AWS SAM Builders](https://github.com/aws/aws-lambda-builders/blob/develop/aws_lambda_builders/workflows/java_maven/DESIGN.md) (Default behavior).
 
 ![Overview](../resources/sam_overview.png)
 
