@@ -1,4 +1,8 @@
-## Standard Maven pom build and package for Java
+# 01-maven-default
+
+## Description
+
+Standard Maven pom build and package for Java
 
 ![Overview](../resources/sam_overview.png)
 
@@ -17,4 +21,7 @@ Deploy the application via the standard deploy mechanism.
 sam deploy
 ```
 
+## Reference
+
+Please follow the [blog post]() for additional information.
 

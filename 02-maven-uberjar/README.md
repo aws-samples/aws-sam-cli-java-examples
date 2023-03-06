@@ -1,4 +1,8 @@
-## Using maven-shade-plugin to package an uber-jar and deploy to AWS Lambda using a Makefile
+# 02-maven-uberjar
+
+## Description
+
+Using maven-shade-plugin to package an uber-jar and deploy to AWS Lambda using a Makefile
 
 ## Instructions
 
@@ -14,4 +18,7 @@ Deploy the application via the standard deploy mechanism.
 sam deploy
 ```
 
+## Reference
+
+Please follow the [blog post]() for additional information.
 

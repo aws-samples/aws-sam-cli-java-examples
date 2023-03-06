@@ -1,4 +1,8 @@
-## Building a native executable using GraalVM inside a custom Docker container
+# 03-maven-graalvm-customer
+
+## Description
+
+Building a native executable using GraalVM inside a custom Docker container
 
 ![Overview](../resources/sam_container.png)
 
@@ -28,3 +32,7 @@ Test the application:
 ```bash
 sam deploy
 ```
+
+## Reference
+
+Please follow the [blog post]() for additional information.
