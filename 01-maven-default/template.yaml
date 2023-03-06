@@ -8,6 +8,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function 
     Properties:
+      FunctionName: 01-maven-default
       CodeUri: HelloWorldFunction/
       Handler: helloworld.App::handleRequest
       Runtime: java11

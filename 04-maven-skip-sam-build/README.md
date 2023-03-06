@@ -14,16 +14,16 @@ Build the package on your own via:
 mvn clean package -f HelloWorldFunction/pom.xml
 ```
 
-Depoy the application directly without sam build:
+Deploy the application directly without sam build:
 
 ```bash
-sam deploy
+sam deploy --guided
 ```
 
 Test the application:
 
 ```bash
-sam deploy
+aws lambda invoke --function-name 04-maven-skip-sam-build /dev/stdout | cat
 ```
 
 ## Reference

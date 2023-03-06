@@ -14,11 +14,16 @@ Build the application via the standard build mechanism.
 sam build
 ```
 
-
 Deploy the application via the standard deploy mechanism.
 
 ```bash
-sam deploy
+sam deploy --guided
+```
+
+Test the application:
+
+```bash
+aws lambda invoke --function-name 01-maven-default /dev/stdout | cat
 ```
 
 ## Reference

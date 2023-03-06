@@ -15,7 +15,13 @@ sam build
 Deploy the application via the standard deploy mechanism.
 
 ```bash
-sam deploy
+sam deploy --guided
+```
+
+Test the application:
+
+```bash
+aws lambda invoke --function-name 02-maven-uberjar /dev/stdout | cat
 ```
 
 ## Reference

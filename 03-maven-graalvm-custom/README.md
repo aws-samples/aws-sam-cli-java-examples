@@ -23,14 +23,13 @@ sam build --use-container --build-image sam/custom-graal-image
 Deploy the application:
 
 ```bash
-sam deploy
+sam deploy --guided
 ```
 
 Test the application:
 
-
 ```bash
-sam deploy
+aws lambda invoke --function-name 03-maven-graalvm-custom /dev/stdout | cat
 ```
 
 ## Reference
