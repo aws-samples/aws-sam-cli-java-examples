@@ -1,4 +1,6 @@
-## [03-maven-graalvm-custom]: Building a native executable using GraalVM, run inside a custom docker container
+## Building a native executable using GraalVM inside a custom Docker container
+
+![Overview](../resources/sam_container.png)
 
 ## Instructions
 

@@ -1,4 +1,6 @@
-## [01-maven-default]: Standard Maven pom build and package for Java
+## Standard Maven pom build and package for Java
+
+![Overview](../resources/sam_overview.png)
 
 ## Instructions
 

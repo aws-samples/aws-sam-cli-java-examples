@@ -1,4 +1,6 @@
-## [04-maven-skip-sam-build]: Building a native executable using GraalVM, run inside a custom docker container
+## Deploying a jar file that has been built outside the SAM build process
+
+![Overview](../resources/sam_skip.png)
 
 ## Instructions
 
