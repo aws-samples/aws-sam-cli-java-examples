@@ -34,4 +34,4 @@ aws lambda invoke --function-name 03-maven-graalvm-custom /dev/stdout | cat
 
 ## Reference
 
-Please follow the [blog post]() for additional information.
+Please follow the [blog post](https://aws.amazon.com/blogs/compute/building-serverless-java-applications-with-the-aws-sam-cli/) for additional information.

@@ -2,7 +2,7 @@
 
 In this project, we provide examples of the different methods that are available to build java applications using AWS SAM.
 
-Refer to the [Building serverless Java applications with the AWS SAM CLI]() blog post for a details of these examples.
+Refer to the [Building serverless Java applications with the AWS SAM CLI](https://aws.amazon.com/blogs/compute/building-serverless-java-applications-with-the-aws-sam-cli/) blog post for a details of these examples.
 
 ## Prerequisites
 To use the example code the following dependencies need to be installed:
