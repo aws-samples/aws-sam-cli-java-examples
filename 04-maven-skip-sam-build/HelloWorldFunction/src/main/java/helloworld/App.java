@@ -10,7 +10,7 @@ public class App implements RequestHandler<Person, String> {
 
     public String handleRequest(final Person person, final Context context) {
         return person.getName()
-                .map( it -> "Hello, " + it)
+                .map( name -> "Hello, " + name)
                 .orElse("Hello, World!");
     }
 }
