@@ -1,18 +1,16 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  maven-image
-
-  Sample SAM Template for maven-image
+  Example of deploying a custom JRE via AWS SAM
 
 Resources:
-  HelloWorldFunctionSkipBuild:
+  HelloWorldFunctionCustomJre:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: 04-maven-skip-sam-build
-      CodeUri: HelloWorldFunction/target/HelloWorldSkipBuild-1.0.jar
+      FunctionName: 05-maven-custom-jre
+      CodeUri: HelloWorldFunction/
       Handler: helloworld.App::handleRequest
-      Runtime: java11
+      Runtime: provided.al2
       Timeout: 20
       Architectures:
         - x86_64
@@ -21,9 +19,9 @@ Resources:
         Variables:
           JAVA_TOOL_OPTIONS: -XX:+TieredCompilation -XX:TieredStopAtLevel=1
     Metadata:
-      SkipBuild: True
+      BuildMethod: makefile
 
 Outputs:
   HelloWorldFunction:
     Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt HelloWorldFunctionSkipBuild.Arn
+    Value: !GetAtt HelloWorldFunctionCustomJre.Arn

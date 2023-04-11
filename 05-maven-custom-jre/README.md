@@ -1,8 +1,8 @@
-# 03-maven-graalvm-custom
+# 05-maven-custom-jre
 
 ## Description
 
-Building a native executable using GraalVM inside a custom Docker container
+Building a custom JRE inside a customer container image
 
 ![Overview](../resources/sam_container.png)
 
@@ -11,13 +11,13 @@ Building a native executable using GraalVM inside a custom Docker container
 Build a custom build image as referenced in the [Dockerfile](Dockerfile).
 
 ```bash
-docker build . -t sam/custom-graal-image
+docker build . -t sam/custom-jre17
 ```
 
 Build the application via the custom build image:
 
 ```bash
-sam build --use-container --build-image sam/custom-graal-image
+sam build --use-container --build-image sam/custom-jre17
 ```
 
 Deploy the application:
@@ -29,7 +29,7 @@ sam deploy --guided
 Test the application:
 
 ```bash
-aws lambda invoke --function-name 03-maven-graalvm-custom /dev/stdout | cat
+aws lambda invoke --function-name 05-maven-custom-jre /dev/stdout | cat
 ```
 
 ## Reference
