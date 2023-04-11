@@ -9,14 +9,8 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 public class App implements RequestHandler<Person, String> {
 
     public String handleRequest(final Person person, final Context context) {
-        var greeting = "Hello, ";
-
-        if (person.getName() != null) {
-            greeting += person.getName();
-        } else {
-            greeting += "World";
-        }
-
-        return greeting; 
+        return person.getName()
+                .map( it -> "Hello, " + it)
+                .orElse("Hello, World!");
     }
 }
