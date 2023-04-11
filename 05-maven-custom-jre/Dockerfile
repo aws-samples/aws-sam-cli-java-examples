@@ -18,6 +18,7 @@ ENV PATH=${PATH}:${M2_HOME}/bin
 # Set Java Home to Corretto 17
 ENV JAVA_HOME /usr/lib/jvm/java-17-amazon-corretto
 
-# Create Minified JRE with reduced modules
+# Create Minified JRE with reduced modules (--add-modules contains only the modules relevant for this app)
+# If you want to use this for your own app you need to first collect the needed modules
 RUN jlink --verbose --compress 2 --strip-java-debug-attributes --no-header-files --no-man-pages --output /jre17-slim --add-modules java.base,java.sql,jdk.unsupported
 RUN /jre17-slim/bin/java -Xshare:dump

@@ -1,4 +1,4 @@
-# 03-maven-graalvm-customer
+# 05-maven-custom-jre
 
 ## Description
 

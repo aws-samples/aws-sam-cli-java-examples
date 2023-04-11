@@ -1,4 +1,4 @@
-# 03-maven-graalvm-customer
+# 03-maven-graalvm-custom
 
 ## Description
 

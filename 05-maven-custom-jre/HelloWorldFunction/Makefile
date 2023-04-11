@@ -1,4 +1,4 @@
-build-HelloWorldFunctionGraalVM:
+build-HelloWorldFunctionCustomJre:
 	mvn clean package
 	cp -r /jre17-slim $(ARTIFACTS_DIR)
 	chmod +x bootstrap

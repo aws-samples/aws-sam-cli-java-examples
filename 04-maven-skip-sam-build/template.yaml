@@ -10,7 +10,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: 04-maven-skip-sam-build
-      CodeUri: HelloWorldFunction/target/HelloWorld-1.0.jar
+      CodeUri: HelloWorldFunction/target/HelloWorldSkipBuild-1.0.jar
       Handler: helloworld.App::handleRequest
       Runtime: java11
       Timeout: 20
